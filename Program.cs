@@ -222,26 +222,27 @@ namespace CSE144Lab4 {
 
                         totalArea += Convert.ToDecimal(cubeArea);
                     }
-
-                    decimal percent1 = (Convert.ToDecimal(circArea)/totalArea) * 100, percent2 = (Convert.ToDecimal(rectArea)/totalArea) * 100, percent3 = (Convert.ToDecimal(cubeArea)/totalArea) * 100;
-
-                    string totalAreaString = String.Format("{0:0.00}", totalArea);
-                    string circString = String.Format("{0:0.00}",circArea);
-                    string rectString = String.Format("{0:0.00}", rectArea);
-                    string cubeString = String.Format("{0:0.00}", cubeArea);
-                    string percent1String = String.Format("{0:0.00}", percent1);
-                    string percent2String = String.Format("{0:0.00}", percent2);
-                    string percent3String = String.Format("{0:0.00}", percent3); 
-
-                    Console.WriteLine("Shapes in the warehouse: " + total);
-                    Console.WriteLine("Circles: " + circles);
-                    Console.WriteLine("Rectangles: " + rects);
-                    Console.WriteLine("Cubes: " + cubes);
-                    Console.WriteLine("Total Area: " + totalAreaString);
-                    Console.WriteLine("Circular Area: " + circString + " (" + percent1String + "%)");
-                    Console.WriteLine("Rectangular Area: " + rectString + " (" + percent2String + "%)");
-                    Console.WriteLine("Cubic Area: " + cubeString + " (" + percent3String + "%)"); 
                 }
+
+                decimal percent1 = (Convert.ToDecimal(circArea)/totalArea) * 100, percent2 = (Convert.ToDecimal(rectArea)/totalArea) * 100, percent3 = (Convert.ToDecimal(cubeArea)/totalArea) * 100;
+
+                string totalAreaString = String.Format("{0:0.00}", totalArea);
+                string circString = String.Format("{0:0.00}",circArea);
+                string rectString = String.Format("{0:0.00}", rectArea);
+                string cubeString = String.Format("{0:0.00}", cubeArea);
+                string percent1String = String.Format("{0:0.00}", percent1);
+                string percent2String = String.Format("{0:0.00}", percent2);
+                string percent3String = String.Format("{0:0.00}", percent3); 
+
+                Console.WriteLine("Shapes in the warehouse: " + total);
+                Console.WriteLine("Circles: " + circles);
+                Console.WriteLine("Rectangles: " + rects);
+                Console.WriteLine("Cubes: " + cubes);
+                Console.WriteLine("Total Area: " + totalAreaString);
+                Console.WriteLine("Circular Area: " + circString + " (" + percent1String + "%)");
+                Console.WriteLine("Rectangular Area: " + rectString + " (" + percent2String + "%)");
+                Console.WriteLine("Cubic Area: " + cubeString + " (" + percent3String + "%)"); 
+            
             }
         }
     }
