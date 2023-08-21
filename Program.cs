@@ -173,13 +173,15 @@ namespace CSE144Lab4 {
                     Console.Write("-");
                 }
 
+                Console.Write("\n");
+
                 for (int i = 0; i < lastBlankPos; i++) {
                     if (warehouse[i].identifier == 1) {
-
+                        Console.WriteLine((i+1) + "\t\tCirle\t\t\t" + ((Circle)warehouse[i]).Diameter);
                     } else if (warehouse[i].identifier == 2) {
-
+                        Console.WriteLine((i+1) + "\t\tRectangle\t\t" + ((Rectangle)warehouse[i]).Length + " x " + ((Rectangle)warehouse[i]).Width);
                     } else if (warehouse[i].identifier == 3) {
-                        
+                        Console.WriteLine((i+1) + "\t\tCube\t\t\t" + ((Cube)warehouse[i]).Side + " x " + ((Cube)warehouse[i]).Side + " x " + ((Cube)warehouse[i]).Side);
                     }
                 }
 
