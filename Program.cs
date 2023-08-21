@@ -15,7 +15,7 @@ namespace CSE144Lab4 {
             get {return m_side;}
             set {
                 if (value < 0) {
-                    Console.WriteLine("\nSide cannot be negative!");
+                    Console.WriteLine("\nSide cannot be negative! Saved 0 instead.");
                 } else {
                     m_side = value;
                 }
@@ -30,7 +30,7 @@ namespace CSE144Lab4 {
             get {return m_length;}
             set {
                 if (value < 0) {
-                    Console.WriteLine("\nLength cannot be negative!");
+                    Console.WriteLine("\nLength cannot be negative! Saved 0 instead.");
                 } else {
                     m_length = value;
                 }
@@ -41,7 +41,7 @@ namespace CSE144Lab4 {
             get {return m_width;}
             set {
                 if (value < 0) {
-                    Console.WriteLine("\nWidth cannot be negative!");
+                    Console.WriteLine("\nWidth cannot be negative! Saved 0 instead.");
                 } else {
                     m_width = value;
                 }
@@ -55,7 +55,7 @@ namespace CSE144Lab4 {
             get {return m_diameter;}
             set {
                 if (value < 0) {
-                    Console.WriteLine("\nDiameter cannot be negative!");
+                    Console.WriteLine("\nDiameter cannot be negative! Saved 0 instead.");
                 } else {
                     m_diameter = value;
                 }
