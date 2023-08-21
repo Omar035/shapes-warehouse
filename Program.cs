@@ -19,6 +19,7 @@ namespace CSE144Lab4 {
 
     class Circle : Shape {
         public int identifier = 1;
+        public double diameter {get; set;}
     }
     class DriverClass {
 
@@ -48,16 +49,14 @@ namespace CSE144Lab4 {
                     case 1:
                         if (lastBlankPos < 100) {
                             AddCirc();
-                            Console.WriteLine(lastBlankPos);
                         } else {
                             Console.WriteLine("\nOops, warehouse fulL!");
                         }
 
-                        //continue;
-                        break;
+                        continue;
                     case 2:
                         if (lastBlankPos < 100) {
-                            //AddRect();
+                            AddRect();
                         } else {
                             Console.WriteLine("\nOops, warehouse fulL!");
                         }
@@ -65,7 +64,7 @@ namespace CSE144Lab4 {
                         continue;
                     case 3:
                         if (lastBlankPos < 100) {
-                            //AddCube();
+                            AddCube();
                         } else {
                             Console.WriteLine("\nOops, warehouse fulL!");
                         }
@@ -75,7 +74,7 @@ namespace CSE144Lab4 {
                         ListItems();
                         continue;
                     case 5:
-
+                        GetStats();
                         continue;
                     case 6:
 
@@ -89,20 +88,24 @@ namespace CSE144Lab4 {
             }
 
             void AddCirc() {
-                lastBlankPos++;
-                Console.WriteLine(lastBlankPos);
+                Console.WriteLine("\nEnter the diameter:");
+                warehouse[lastBlankPos] = new Circle();
             }
 
             void AddRect() {
 
             }
 
-            void AddCube(Shape[] warehouse, int lastBlankPos) {
+            void AddCube() {
 
             }
 
             void ListItems() {
 
+            }
+
+            void GetStats() {
+                
             }
         }
     }
