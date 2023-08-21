@@ -19,7 +19,7 @@ namespace CSE144Lab4 {
 
     class Circle : Shape {
         public int identifier = 1;
-        public double diameter {get; set;}
+        public double diameter;
     }
     class DriverClass {
 
@@ -90,6 +90,11 @@ namespace CSE144Lab4 {
             void AddCirc() {
                 Console.WriteLine("\nEnter the diameter:");
                 warehouse[lastBlankPos] = new Circle();
+                ((Circle)warehouse[lastBlankPos]).identifier = lastBlankPos + 1;
+                ((Circle)warehouse[lastBlankPos]).diameter = Convert.ToDouble(Console.ReadLine());
+
+                lastBlankPos++;
+                Console.WriteLine("\nSuccessfully added a Circle!");
             }
 
             void AddRect() {
