@@ -224,6 +224,8 @@ namespace CSE144Lab4 {
                     }
                 }
 
+                total = circles + rects + cubes;
+
                 decimal percent1 = (Convert.ToDecimal(circArea)/totalArea) * 100, percent2 = (Convert.ToDecimal(rectArea)/totalArea) * 100, percent3 = (Convert.ToDecimal(cubeArea)/totalArea) * 100;
 
                 string totalAreaString = String.Format("{0:0.00}", totalArea);
