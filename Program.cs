@@ -22,7 +22,7 @@ namespace CSE144Lab4 {
     }
     class DriverClass {
 
-        private static int lastBlankPos = 50;
+        private static int lastBlankPos = 0;
         static void Main() {
             Console.WriteLine("\t\tWelcome to Shapes' Warehouse!");
 
