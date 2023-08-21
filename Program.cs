@@ -15,6 +15,8 @@ namespace CSE144Lab4 {
 
     class Rectangle : Shape {
         public int identifier = 2;
+        public double length;
+        public double width;
     }
 
     class Circle : Shape {
@@ -88,9 +90,10 @@ namespace CSE144Lab4 {
             }
 
             void AddCirc() {
-                Console.WriteLine("\nEnter the diameter:");
                 warehouse[lastBlankPos] = new Circle();
                 ((Circle)warehouse[lastBlankPos]).identifier = lastBlankPos + 1;
+
+                Console.WriteLine("\nEnter the diameter:");
                 ((Circle)warehouse[lastBlankPos]).diameter = Convert.ToDouble(Console.ReadLine());
 
                 lastBlankPos++;
@@ -98,7 +101,17 @@ namespace CSE144Lab4 {
             }
 
             void AddRect() {
+                warehouse[lastBlankPos] = new Rectangle();
+                ((Rectangle)warehouse[lastBlankPos]).identifier = lastBlankPos + 1;
 
+                Console.WriteLine("\nEnter the length:");
+                ((Rectangle)warehouse[lastBlankPos]).length = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Enter the width:");
+                ((Rectangle)warehouse[lastBlankPos]).width = Convert.ToDouble(Console.ReadLine());
+
+                lastBlankPos++;
+                Console.WriteLine("\nSuccessfully added a Rectangle!");
             }
 
             void AddCube() {
