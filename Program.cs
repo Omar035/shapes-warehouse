@@ -198,24 +198,49 @@ namespace CSE144Lab4 {
 
                 Console.WriteLine("Total no. of Shapes in the Warehouse: " + lastBlankPos);
                 
-                int circles = 0, rects = 0, cubes = 0;
+                int circles = 0, rects = 0, cubes = 0, total = 0;
                 double circArea = 0, rectArea = 0, cubeArea = 0;
                 decimal totalArea = 0;
 
                 for (int i = 0; i < lastBlankPos; i++) {
                     if (warehouse[i].identifier == 1) {
                         circles++;
+
                         circArea += (0.25 * (Math.PI) * (((Circle)warehouse[i]).Diameter) * (((Circle)warehouse[i]).Diameter));
+
                         totalArea += Convert.ToDecimal(circArea);
                     } else if (warehouse[i].identifier == 2) {
                         rects++;
+
                         rectArea += ((((Rectangle)warehouse[i]).Length) * (((Rectangle)warehouse[i]).Width));
+
                         totalArea += Convert.ToDecimal(rectArea);
                     } else if (warehouse[i].identifier == 3) {
                         cubes++;
+
                         cubeArea += (6 * (((Cube)warehouse[i]).Side) * (((Cube)warehouse[i]).Side));
+
                         totalArea += Convert.ToDecimal(cubeArea);
                     }
+
+                    decimal percent1 = (Convert.ToDecimal(circArea)/totalArea) * 100, percent2 = (Convert.ToDecimal(rectArea)/totalArea) * 100, percent3 = (Convert.ToDecimal(cubeArea)/totalArea) * 100;
+
+                    string totalAreaString = String.Format("{0:0.00}", totalArea);
+                    string circString = String.Format("{0:0.00}",circArea);
+                    string rectString = String.Format("{0:0.00}", rectArea);
+                    string cubeString = String.Format("{0:0.00}", cubeArea);
+                    string percent1String = String.Format("{0:0.00}", percent1);
+                    string percent2String = String.Format("{0:0.00}", percent2);
+                    string percent3String = String.Format("{0:0.00}", percent3); 
+
+                    Console.WriteLine("Shapes in the warehouse: " + total);
+                    Console.WriteLine("Circles: " + circles);
+                    Console.WriteLine("Rectangles: " + rects);
+                    Console.WriteLine("Cubes: " + cubes);
+                    Console.WriteLine("Total Area: " + totalAreaString);
+                    Console.WriteLine("Circular Area: " + circString + " (" + percent1String + "%)");
+                    Console.WriteLine("Rectangular Area: " + rectString + " (" + percent2String + "%)");
+                    Console.WriteLine("Cubic Area: " + cubeString + " (" + percent3String + "%)"); 
                 }
             }
         }
