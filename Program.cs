@@ -11,17 +11,62 @@ namespace CSE144Lab4 {
 
     class Cube : Shape {
         public int identifier = 3;
+        private double _side;
+
+        public double Side {
+            get {return _side;}
+            set {
+                if (value < 0) {
+                    Console.WriteLine("\nSide cannot be negative!");
+                } else {
+                    _side = value;
+                }
+            }
+        }
     }
 
     class Rectangle : Shape {
         public int identifier = 2;
-        public double length;
-        public double width;
+        private double _length;
+        private double _width;
+
+        public double Length {
+            get {return _length;}
+            set {
+                if (value < 0) {
+                    Console.WriteLine("\nLength cannot be negative!");
+                } else {
+                    _length = value;
+                }
+            } 
+        }
+
+        public double Width {
+            get {return _width;}
+            set {
+                if (value < 0) {
+                    Console.WriteLine("\nWidth cannot be negative!");
+                } else {
+                    _width = value;
+                }
+            }
+        }
     }
 
     class Circle : Shape {
         public int identifier = 1;
-        public double diameter;
+        private double _diameter;
+
+        public double Diameter {
+            get {return _diameter;}
+            set {
+                if (value < 0) {
+                    Console.WriteLine("\nDiameter cannot be negative!");
+                } else {
+                    _diameter = value;
+                }
+            }
+        }
     }
     class DriverClass {
 
@@ -91,10 +136,9 @@ namespace CSE144Lab4 {
 
             void AddCirc() {
                 warehouse[lastBlankPos] = new Circle();
-                ((Circle)warehouse[lastBlankPos]).identifier = lastBlankPos + 1;
 
                 Console.WriteLine("\nEnter the diameter:");
-                ((Circle)warehouse[lastBlankPos]).diameter = Convert.ToDouble(Console.ReadLine());
+                ((Circle)warehouse[lastBlankPos]).Diameter = Convert.ToDouble(Console.ReadLine());
 
                 lastBlankPos++;
                 Console.WriteLine("\nSuccessfully added a Circle!");
@@ -102,13 +146,12 @@ namespace CSE144Lab4 {
 
             void AddRect() {
                 warehouse[lastBlankPos] = new Rectangle();
-                ((Rectangle)warehouse[lastBlankPos]).identifier = lastBlankPos + 1;
 
                 Console.WriteLine("\nEnter the length:");
-                ((Rectangle)warehouse[lastBlankPos]).length = Convert.ToDouble(Console.ReadLine());
+                ((Rectangle)warehouse[lastBlankPos]).Length = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine("Enter the width:");
-                ((Rectangle)warehouse[lastBlankPos]).width = Convert.ToDouble(Console.ReadLine());
+                ((Rectangle)warehouse[lastBlankPos]).Width = Convert.ToDouble(Console.ReadLine());
 
                 lastBlankPos++;
                 Console.WriteLine("\nSuccessfully added a Rectangle!");
