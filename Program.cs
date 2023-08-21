@@ -1,28 +1,29 @@
 ﻿using System;
+using System.Data.Common;
 using System.Dynamic;
 using System.Globalization;
 using System.Security.Cryptography.X509Certificates;
 
 namespace CSE144Lab4 {
     class Shape {
-        public int identifier;
-        
-    }
 
-    class Rectangle : Shape {
- 
     }
 
     class Cube : Shape {
+        public int identifier = 3;
+    }
 
+    class Rectangle : Shape {
+        public int identifier = 2;
     }
 
     class Circle : Shape {
-
+        public int identifier = 1;
     }
     class DriverClass {
-        private Shape[] warehouse = new Shape[100];
-        void Main() {
+
+        private static int lastBlankPos = 50;
+        static void Main() {
             Console.WriteLine("\t\tWelcome to Shapes' Warehouse!");
 
             for (int i = 0; i < 70; i++) {
@@ -39,21 +40,24 @@ namespace CSE144Lab4 {
             Console.WriteLine("Enter your choice: ");
 
             int choice = Convert.ToInt32(Console.ReadLine());
-            int lastBlankPos = 0;
+
+            Shape[] warehouse = new Shape[100];
 
             while (true) {
                 switch (choice) {
                     case 1:
                         if (lastBlankPos < 100) {
-                            AddCirc(warehouse, lastBlankPos);
+                            AddCirc();
+                            Console.WriteLine(lastBlankPos);
                         } else {
                             Console.WriteLine("\nOops, warehouse fulL!");
                         }
 
-                        continue;
+                        //continue;
+                        break;
                     case 2:
                         if (lastBlankPos < 100) {
-                            AddRect();
+                            //AddRect();
                         } else {
                             Console.WriteLine("\nOops, warehouse fulL!");
                         }
@@ -61,7 +65,7 @@ namespace CSE144Lab4 {
                         continue;
                     case 3:
                         if (lastBlankPos < 100) {
-                            AddCube();
+                            //AddCube();
                         } else {
                             Console.WriteLine("\nOops, warehouse fulL!");
                         }
@@ -84,11 +88,12 @@ namespace CSE144Lab4 {
                 break;
             }
 
-            void AddCirc(Shape[] warehouse, int lastBlankPos) {
-
+            void AddCirc() {
+                lastBlankPos++;
+                Console.WriteLine(lastBlankPos);
             }
 
-            void AddRect(Shape[] warehouse, int lastBlankPos) {
+            void AddRect() {
 
             }
 

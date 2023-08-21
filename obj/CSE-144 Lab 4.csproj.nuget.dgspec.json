@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code Files\\C#\\CSE-144 Lab 4\\CSE-144 Lab 4.csproj": {}
+    "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj": {}
   },
   "projects": {
-    "D:\\Code Files\\C#\\CSE-144 Lab 4\\CSE-144 Lab 4.csproj": {
+    "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code Files\\C#\\CSE-144 Lab 4\\CSE-144 Lab 4.csproj",
+        "projectUniqueName": "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj",
         "projectName": "CSE-144 Lab 4",
-        "projectPath": "D:\\Code Files\\C#\\CSE-144 Lab 4\\CSE-144 Lab 4.csproj",
+        "projectPath": "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj",
         "packagesPath": "C:\\Users\\omarh\\.nuget\\packages\\",
-        "outputPath": "D:\\Code Files\\C#\\CSE-144 Lab 4\\obj\\",
+        "outputPath": "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\omarh\\AppData\\Roaming\\NuGet\\NuGet.Config"
