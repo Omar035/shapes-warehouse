@@ -158,7 +158,13 @@ namespace CSE144Lab4 {
             }
 
             void AddCube() {
+                warehouse[lastBlankPos] = new Cube();
 
+                Console.WriteLine("Enter the side:");
+                ((Cube)warehouse[lastBlankPos]).Side = Convert.ToDouble(Console.ReadLine());
+
+                lastBlankPos++;
+                Console.WriteLine("\nSuccessfully added a Cube!");
             }
 
             void ListItems() {
