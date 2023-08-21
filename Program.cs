@@ -6,64 +6,58 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace CSE144Lab4 {
     class Shape {
-
+        public int identifier;
     }
 
     class Cube : Shape {
-        public int identifier = 3;
-        private double _side;
-
+        private double m_side;
         public double Side {
-            get {return _side;}
+            get {return m_side;}
             set {
                 if (value < 0) {
                     Console.WriteLine("\nSide cannot be negative!");
                 } else {
-                    _side = value;
+                    m_side = value;
                 }
             }
         }
     }
 
     class Rectangle : Shape {
-        public int identifier = 2;
-        private double _length;
-        private double _width;
-
+        private double m_length;
+        private double m_width;
         public double Length {
-            get {return _length;}
+            get {return m_length;}
             set {
                 if (value < 0) {
                     Console.WriteLine("\nLength cannot be negative!");
                 } else {
-                    _length = value;
+                    m_length = value;
                 }
             } 
         }
 
         public double Width {
-            get {return _width;}
+            get {return m_width;}
             set {
                 if (value < 0) {
                     Console.WriteLine("\nWidth cannot be negative!");
                 } else {
-                    _width = value;
+                    m_width = value;
                 }
             }
         }
     }
 
     class Circle : Shape {
-        public int identifier = 1;
-        private double _diameter;
-
+        private double m_diameter;
         public double Diameter {
-            get {return _diameter;}
+            get {return m_diameter;}
             set {
                 if (value < 0) {
                     Console.WriteLine("\nDiameter cannot be negative!");
                 } else {
-                    _diameter = value;
+                    m_diameter = value;
                 }
             }
         }
@@ -75,23 +69,23 @@ namespace CSE144Lab4 {
             Console.WriteLine("\t\tWelcome to Shapes' Warehouse!");
 
             for (int i = 0; i < 70; i++) {
-                Console.Write("=");
+                Console.Write("-");
             }
-
-            Console.Write("\n");
-            Console.WriteLine("[1] Add a Circle.");
-            Console.WriteLine("[2] Add a Rectangle.");
-            Console.WriteLine("[3] Add a Cube.");
-            Console.WriteLine("[4] List Items.");
-            Console.WriteLine("[5] Get Statistics.");
-            Console.WriteLine("[6] Exit.");
-            Console.WriteLine("Enter your choice: ");
-
-            int choice = Convert.ToInt32(Console.ReadLine());
 
             Shape[] warehouse = new Shape[100];
 
             while (true) {
+                Console.Write("\n");
+                Console.WriteLine("[1] Add a Circle.");
+                Console.WriteLine("[2] Add a Rectangle.");
+                Console.WriteLine("[3] Add a Cube.");
+                Console.WriteLine("[4] List Items.");
+                Console.WriteLine("[5] Get Statistics.");
+                Console.WriteLine("[6] Exit.");
+                Console.WriteLine("Enter your choice: ");
+
+                int choice = Convert.ToInt32(Console.ReadLine());
+
                 switch (choice) {
                     case 1:
                         if (lastBlankPos < 100) {
@@ -136,6 +130,7 @@ namespace CSE144Lab4 {
 
             void AddCirc() {
                 warehouse[lastBlankPos] = new Circle();
+                ((Circle)warehouse[lastBlankPos]).identifier = 1;
 
                 Console.WriteLine("\nEnter the diameter:");
                 ((Circle)warehouse[lastBlankPos]).Diameter = Convert.ToDouble(Console.ReadLine());
@@ -146,6 +141,7 @@ namespace CSE144Lab4 {
 
             void AddRect() {
                 warehouse[lastBlankPos] = new Rectangle();
+                ((Rectangle)warehouse[lastBlankPos]).identifier = 2;
 
                 Console.WriteLine("\nEnter the length:");
                 ((Rectangle)warehouse[lastBlankPos]).Length = Convert.ToDouble(Console.ReadLine());
@@ -159,6 +155,7 @@ namespace CSE144Lab4 {
 
             void AddCube() {
                 warehouse[lastBlankPos] = new Cube();
+                ((Cube)warehouse[lastBlankPos]).identifier = 3;
 
                 Console.WriteLine("Enter the side:");
                 ((Cube)warehouse[lastBlankPos]).Side = Convert.ToDouble(Console.ReadLine());
@@ -168,6 +165,23 @@ namespace CSE144Lab4 {
             }
 
             void ListItems() {
+                
+                Console.Write("\n");
+                Console.WriteLine("ID\t\tType\t\t\tDimension");
+                
+                for (int i = 0; i < 70; i++) {
+                    Console.Write("-");
+                }
+
+                for (int i = 0; i < lastBlankPos; i++) {
+                    if (warehouse[i].identifier == 1) {
+
+                    } else if (warehouse[i].identifier == 2) {
+
+                    } else if (warehouse[i].identifier == 3) {
+                        
+                    }
+                }
 
             }
 
