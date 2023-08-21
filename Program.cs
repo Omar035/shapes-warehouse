@@ -188,7 +188,35 @@ namespace CSE144Lab4 {
             }
 
             void GetStats() {
+                Console.WriteLine("\n\t\tSummary of the Warehouse:");
                 
+                for (int i = 0; i < 70; i++) {
+                    Console.Write("-");
+                }
+
+                Console.Write("\n");
+
+                Console.WriteLine("Total no. of Shapes in the Warehouse: " + lastBlankPos);
+                
+                int circles = 0, rects = 0, cubes = 0;
+                double circArea = 0, rectArea = 0, cubeArea = 0;
+                decimal totalArea = 0;
+
+                for (int i = 0; i < lastBlankPos; i++) {
+                    if (warehouse[i].identifier == 1) {
+                        circles++;
+                        circArea += (0.25 * (Math.PI) * (((Circle)warehouse[i]).Diameter) * (((Circle)warehouse[i]).Diameter));
+                        totalArea += Convert.ToDecimal(circArea);
+                    } else if (warehouse[i].identifier == 2) {
+                        rects++;
+                        rectArea += ((((Rectangle)warehouse[i]).Length) * (((Rectangle)warehouse[i]).Width));
+                        totalArea += Convert.ToDecimal(rectArea);
+                    } else if (warehouse[i].identifier == 3) {
+                        cubes++;
+                        cubeArea += (6 * (((Cube)warehouse[i]).Side) * (((Cube)warehouse[i]).Side));
+                        totalArea += Convert.ToDecimal(cubeArea);
+                    }
+                }
             }
         }
     }
