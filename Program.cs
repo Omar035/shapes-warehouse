@@ -220,19 +220,19 @@ namespace CSE144Lab4 {
                     if (warehouse[i].identifier == 1) {
                         circles++;
 
-                        circArea += (0.25 * (Math.PI) * (((Circle)warehouse[i]).Diameter) * (((Circle)warehouse[i]).Diameter));
+                        circArea += 0.25 * Math.PI * ((Circle)warehouse[i]).Diameter * ((Circle)warehouse[i]).Diameter;
 
                         totalArea += Convert.ToDecimal(circArea);
                     } else if (warehouse[i].identifier == 2) {
                         rects++;
 
-                        rectArea += ((((Rectangle)warehouse[i]).Length) * (((Rectangle)warehouse[i]).Width));
+                        rectArea += ((Rectangle)warehouse[i]).Length * ((Rectangle)warehouse[i]).Width;
 
                         totalArea += Convert.ToDecimal(rectArea);
                     } else if (warehouse[i].identifier == 3) {
                         cubes++;
 
-                        cubeArea += (6 * (((Cube)warehouse[i]).Side) * (((Cube)warehouse[i]).Side));
+                        cubeArea += 6 * ((Cube)warehouse[i]).Side * ((Cube)warehouse[i]).Side;
 
                         totalArea += Convert.ToDecimal(cubeArea);
                     }
