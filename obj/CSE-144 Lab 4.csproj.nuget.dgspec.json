@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj": {}
+    "d:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj": {}
   },
   "projects": {
-    "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj": {
+    "d:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj",
+        "projectUniqueName": "d:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj",
         "projectName": "CSE-144 Lab 4",
-        "projectPath": "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj",
+        "projectPath": "d:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\CSE-144 Lab 4.csproj",
         "packagesPath": "C:\\Users\\omarh\\.nuget\\packages\\",
-        "outputPath": "D:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\obj\\",
+        "outputPath": "d:\\Code Files\\C#\\CSE-144 Lab 4\\shapes-warehouse\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
