@@ -27,3 +27,18 @@ D:\Code Files\C#\CSE-144 Lab 4\shapes-warehouse\bin\Debug\net8.0\CSE-144 Lab 4.d
 D:\Code Files\C#\CSE-144 Lab 4\shapes-warehouse\bin\Debug\net8.0\CSE-144 Lab 4.pdb
 D:\Code Files\C#\CSE-144 Lab 4\shapes-warehouse\obj\Debug\net8.0\CSE-144 Lab 4.genruntimeconfig.cache
 D:\Code Files\C#\CSE-144 Lab 4\shapes-warehouse\obj\Debug\net8.0\ref\CSE-144 Lab 4.dll
+D:\Code Files\C#\shapes-warehouse\bin\Debug\net8.0\CSE-144 Lab 4.exe
+D:\Code Files\C#\shapes-warehouse\bin\Debug\net8.0\CSE-144 Lab 4.deps.json
+D:\Code Files\C#\shapes-warehouse\bin\Debug\net8.0\CSE-144 Lab 4.runtimeconfig.json
+D:\Code Files\C#\shapes-warehouse\bin\Debug\net8.0\CSE-144 Lab 4.dll
+D:\Code Files\C#\shapes-warehouse\bin\Debug\net8.0\CSE-144 Lab 4.pdb
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\CSE-144 Lab 4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\CSE-144 Lab 4.AssemblyInfoInputs.cache
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\CSE-144 Lab 4.AssemblyInfo.cs
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\CSE-144 Lab 4.csproj.CoreCompileInputs.cache
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\CSE-144 Lab 4.sourcelink.json
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\CSE-144 Lab 4.dll
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\refint\CSE-144 Lab 4.dll
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\CSE-144 Lab 4.pdb
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\CSE-144 Lab 4.genruntimeconfig.cache
+D:\Code Files\C#\shapes-warehouse\obj\Debug\net8.0\ref\CSE-144 Lab 4.dll
